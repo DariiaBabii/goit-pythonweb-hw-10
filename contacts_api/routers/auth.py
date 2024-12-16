@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends, Security, status
 from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
 from sqlalchemy.orm import Session
-from contacts_api.database import get_db
+from contacts_api.configs.database import get_db
 from contacts_api.models import User
 from contacts_api.schemas import UserCreate, UserResponse
 from contacts_api.auth import hash_password, verify_password, create_access_token, decode_access_token

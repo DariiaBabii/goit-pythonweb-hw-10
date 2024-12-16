@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from fastapi.security import OAuth2PasswordBearer
-from contacts_api.database import engine, SessionLocal
+from contacts_api.configs.database import engine, SessionLocal
 from contacts_api import crud, models, schemas
 from contacts_api.auth import decode_access_token
 

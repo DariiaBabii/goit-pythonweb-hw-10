@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from contacts_api.database import get_db
+from contacts_api.configs.database import get_db
 from contacts_api.models import User
-from contacts_api.dependencies import create_email_token, verify_email_token
+from contacts_api.configs.dependencies import create_email_token, verify_email_token
 from contacts_api.user import get_current_user, send_email_verification
 
 router = APIRouter()

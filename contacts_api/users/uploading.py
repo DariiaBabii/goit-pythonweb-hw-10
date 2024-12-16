@@ -4,9 +4,9 @@ from sqlalchemy.orm import Session
 from dotenv import load_dotenv
 import cloudinary
 import cloudinary.uploader
-from contacts_api.database import get_db
+from contacts_api.configs.database import get_db
 from contacts_api.models import User
-from contacts_api.dependencies import get_current_user
+from contacts_api.configs.dependencies import get_current_user
 
 router = APIRouter()
 

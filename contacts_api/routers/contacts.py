@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from auth import get_current_user
 from crud import get_contacts, create_contact, update_contact, delete_contact
-from database import get_db
+from contacts_api.configs.database import get_db
 
 router = APIRouter()
 

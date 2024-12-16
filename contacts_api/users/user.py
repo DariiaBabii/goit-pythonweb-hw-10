@@ -1,12 +1,12 @@
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
-from contacts_api.database import get_db
+from contacts_api.configs.database import get_db
 from contacts_api.models import User
-from contacts_api.dependencies import verify_email_token
+from contacts_api.configs.dependencies import verify_email_token
 import smtplib
 from email.mime.text import MIMEText
-from contacts_api.config import settings
+from contacts_api.configs.config import settings
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 

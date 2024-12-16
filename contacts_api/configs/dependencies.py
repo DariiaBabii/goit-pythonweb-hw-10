@@ -1,7 +1,7 @@
 import jwt
 from datetime import datetime, timedelta
 from fastapi import HTTPException
-from contacts_api.config import settings
+from contacts_api.configs.config import settings
 
 # Secret key and encryption algorithm
 SECRET_KEY = settings.SECRET_KEY
